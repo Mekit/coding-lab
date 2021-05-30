@@ -2,7 +2,7 @@
 
 ## Obiettivi
 
-L'obbiettivo del *laboratorio 0* è quello di sperimentare con il codice html e con i componenti di [Boostrap](https://getbootstrap.com/) per creare un un layout realistico di una pagina web.
+L'obbiettivo del *laboratorio 0* è quello di sperimentare con il codice html e con i componenti di [Bootstrap](https://getbootstrap.com/) per creare un layout realistico di una pagina web. Per ora niente css 😏, solo classi e documentazione 🚀
 
 ## Todo
 
