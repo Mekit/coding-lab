@@ -21,15 +21,16 @@ Non si inizierà con lunghe lezioni di html e css, si cercherà più possibile d
 Si tratteranno principalmente argomenti legati al front-end, di connessione tra il mondo del design e quello dello sviluppo.
 Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più complessi (back-end, cms, framework javascript, ...).
 
-I tutor di Coding Lab hanno tutti competenze lato design e lato coding.
-- [Luca Cattaneo](https://www.linkedin.com/in/luca-cattaneo-dev/)
-- [Lucrezia Ficetti](https://www.linkedin.com/in/lucrezia-ficetti/)
-
 ## Laboratori
 - [ ] [Laboratorio 0](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
 - [ ] Laboratorio 1 - Server di sviluppo e FTP
 - [ ] Laboratorio 2 - Sass
 - [ ] Laboratorio 3 - BEM
+
+## Tutor
+I tutor di Coding Lab hanno tutti competenze lato design e lato coding.
+- [Luca Cattaneo](https://www.linkedin.com/in/luca-cattaneo-dev/)
+- [Lucrezia Ficetti](https://www.linkedin.com/in/lucrezia-ficetti/)
 
 ## Come partecipare?
 
