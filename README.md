@@ -14,7 +14,7 @@ Ogni laboratorio prevede la realizzazione di un output finale concreto realizzat
 Si inizia insieme durante la sessione in streaming o di persona e si conclude in autonomia nei giorni successivi.
 
 I tutor del progetto aiutano il *neo-coder* passo dopo passo, spiegando i passaggi con parole semplici.
-Diventare un developer è un progetto ambizioso ma anche sfidate e divernte; le conoscenze da acquisire sono tantissime e molto probabilmente non verranno coperte tutte da questi laboratori. Ma.. se dentro un designer c'è un piccolo grande futuro da sviluppatore, l'unico modo per scoprirlo è cominciare da qualche parte 🤓
+Diventare un developer è un percorso ambizioso ma anche sfidate e divertente; le conoscenze da acquisire sono tantissime e molto probabilmente non verranno coperte tutte da questi laboratori. Ma.. se dentro un designer c'è un piccolo grande futuro da sviluppatore, l'unico modo per scoprirlo è cominciare da qualche parte 🤓
 
 Non si inizierà con lunghe lezioni di html e css, si cercherà più possibile di utilizzare tecnologie all'avanguardia in modo da realizzare fin da subito e in tempi rapidi qualcosa di concreto.
 
