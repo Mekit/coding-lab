@@ -26,7 +26,7 @@ I tutor di Coding Lab hanno tutti competenze lato design e lato coding.
 - [Lucrezia Ficetti](https://www.linkedin.com/in/lucrezia-ficetti/)
 
 ## Laboratori
-- [ ] [Laboratorio 0](./tree/main/00-bootstrap) - Bootstrap
+- [ ] [Laboratorio 0](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
 - [ ] Laboratorio 1 - Server di sviluppo e FTP
 - [ ] Laboratorio 2 - Sass
 - [ ] Laboratorio 3 - BEM
