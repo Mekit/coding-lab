@@ -3,11 +3,14 @@ Coding Lab è un progetto [Mekit](https://www.mekit.it/) dedicato ai designer ch
 
 ## Perché un designer dovrebbe interessarsi alla scrittura del codice?
 Un designer che realizza interfacce può avere più consapevolezza e progettare in modo più efficace se comprende come funziona la tecnologia che sta alla base del prodotto a cui sta lavorando.
+
 Inoltre i profili professionali ibridi e di connessione tra diverse discipline (come design e sviluppo) sono di fondamentale importanza all'interno di un team di lavoro proprio perché possono migliorare, semplificare e velocizzare molto la realizzazione di un progetto.
 
 ## Come funziona?
 I laboratori sono momenti di sperimentazione sul campo: si inizia con una breve spiegazione e/o introduzione sul tema, subito dopo si mette mano al codice e si comincia a sperimentare.
+
 Ogni laboratorio prevede la realizzazione di un output finale concreto realizzato dal *neo-coder* 🌱
+
 Si inizia insieme durante la sessione in streaming o di persona e si conclude in autonomia nei giorni successivi.
 
 I tutor del progetto aiutano il *neo-coder* passo dopo passo, spiegando i passaggi con parole semplici.
