@@ -11,7 +11,7 @@ L'obbiettivo del *laboratorio 0* è quello di sperimentare con il codice html e 
   -  [ ] Installare il plugin Live Server
 - [ ] Creare un file index.html
   -  [ ] Breve analisi delle sezioni head e body
-- [ ] Creare un set up semplice di [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [ ] Creare un set up semplice di [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   -  [ ] Abilitare il Live Server
 - [ ] Creare una pagina web con i componenti di Bootstrap
   -  [ ] Prendere dimestichezza con la documentazione di [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
