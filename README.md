@@ -28,7 +28,7 @@ Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più
 - [ ] Laboratorio 3 - BEM
 
 ## Tutor
-I tutor di Coding Lab hanno tutti competenze lato design e lato coding.
+I tutor di Coding Lab sono sviluppatori e designer che hanno compotenze trasversali tra i due mondi.
 - [Luca Cattaneo](https://www.linkedin.com/in/luca-cattaneo-dev/)
 - [Alice Ninni](https://www.linkedin.com/in/alice-ninni/)
 - [Lucrezia Ficetti](https://www.linkedin.com/in/lucrezia-ficetti/)
