@@ -31,15 +31,14 @@ Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più
 I tutor di Coding Lab sono sviluppatori e designer che hanno compotenze trasversali tra i due mondi.
 - [Luca Cattaneo](https://www.linkedin.com/in/luca-cattaneo-dev/)
 - [Alice Ninni](https://www.linkedin.com/in/alice-ninni/)
-- [Lucrezia Ficetti](https://www.linkedin.com/in/lucrezia-ficetti/)
 
 ## Come partecipare?
 
 ### Vuoi partecipare ai laboratori?
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin fringilla massa, sit amet consectetur leo. Quisque porta egestas vulputate. Pellentesque et porta urna, eu eleifend odio. Praesent volutpat lectus quam, sed vehicula lorem luctus id. Aenean a diam eget ante facilisis sodales.
+To do
 
 ### Vuoi diventare un tutor?
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin fringilla massa, sit amet consectetur leo. Quisque porta egestas vulputate. Pellentesque et porta urna, eu eleifend odio. Praesent volutpat lectus quam, sed vehicula lorem luctus id. Aenean a diam eget ante facilisis sodales.
+To do
 
 
 
