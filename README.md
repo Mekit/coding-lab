@@ -22,10 +22,8 @@ Si tratteranno principalmente argomenti legati al front-end, di connessione tra 
 Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più complessi (back-end, cms, framework javascript, ...).
 
 ## Laboratori
-- [ ] [Laboratorio 0](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
-- [ ] Laboratorio 1 - Server di sviluppo e FTP
-- [ ] Laboratorio 2 - Sass
-- [ ] Laboratorio 3 - BEM
+- [ ] [Laboratorio 00](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
+- [ ] [Laboratorio 01](https://github.com/Mekit/coding-lab/tree/main/01-node-and-sass) - Node.js, Sass and Gulp
 
 ## Tutor
 I tutor di Coding Lab sono sviluppatori e designer che hanno compotenze trasversali tra i due mondi.
