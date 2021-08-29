@@ -25,7 +25,7 @@ const files = {
 }
 
 // https://github.com/adriancooney/node-sfx
-function done(end){
+function sound(end){
   // sounds: hero, ping, random
   sfx.play('ping', 5, function() {
     end();
@@ -60,15 +60,15 @@ function watchSass(){
     series(
       compileSass,
       reload,
-      done,
+      sound,
     )
   );    
 }
 
 // A simple task to reload the page
-function reload(bsDone) {
+function reload(done) {
   browserSync.reload();
-  bsDone();
+  done();
 }
 
 // Export the default Gulp task so it can be run
@@ -76,6 +76,6 @@ function reload(bsDone) {
 // then runs cacheBust, then watch task
 exports.default = series(
   compileSass,
-  done,
+  sound,
   watchSass,
 );
