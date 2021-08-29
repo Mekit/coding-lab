@@ -14,6 +14,7 @@ var sass = require('gulp-sass')(require('sass'));
 
 const autoprefixer = require('gulp-autoprefixer');
 const sfx = require("sfx");
+const browserSync = require("browser-sync").create();
 
 // File paths
 const files = { 
@@ -38,28 +39,36 @@ function done(end){
 function compileSass(){
   return src(files.sassPath)
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer([
-      "Android 2.3",
-      "Android >= 4",
-      "Chrome >= 20",
-      "Firefox >= 24",
-      "Explorer >= 8",
-      "iOS >= 6",
-      "Opera >= 12",
-      "Safari >= 6"
-    ]))
+    .pipe(autoprefixer('last 10 versions', 'ie 9'))
     .pipe(dest('./css/')
   );  
 }
 
 /* Watch Task */
 function watchSass(){
+  browserSync.init({
+    // You can tell browserSync to use this directory and serve it as a mini-server
+    server: {
+      baseDir: "./"
+    }
+    // If you are already serving your website locally using something like apache
+    // You can use the proxy setting to proxy that instead
+    // proxy: "yourlocal.dev"
+  });
+
   watch(files.sass, {interval: 1000, usePolling: true}, // Makes docker work
     series(
       compileSass,
+      reload,
       done,
     )
   );    
+}
+
+// A simple task to reload the page
+function reload(bsDone) {
+  browserSync.reload();
+  bsDone();
 }
 
 // Export the default Gulp task so it can be run
