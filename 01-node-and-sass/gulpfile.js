@@ -16,16 +16,22 @@ const autoprefixer = require('gulp-autoprefixer');
 const sfx = require("sfx");
 const browserSync = require("browser-sync").create();
 
+// In windows, the sfx utility is not working
+// turn of this settings to use this project
+const soundEffects = true; 
+
 // File paths
 const files = { 
   sass: './scss/**/*.scss',
   sassPath: './scss/style.scss',
-
   cssPath: './css/style.css',
 }
 
 // https://github.com/adriancooney/node-sfx
 function sound(end){
+  if (!soundEffects){
+    end();
+  }
   // sounds: hero, ping, random
   sfx.play('ping', 5, function() {
     end();

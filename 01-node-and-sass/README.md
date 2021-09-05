@@ -16,9 +16,12 @@ L'obbiettivo del *laboratorio 01* è quello di utilizzare [Node.js](https://node
   - [ ] Navigare con il terminale nella cartella del progetto
   - [ ] Installare le dipendenze utilizzando il comando `npm i` (npm install)
   - [ ] Constatare cosa succede nella cartella `node_modules`
-- [ ] Copiare il file `index.html` dal progetto 00-bootstrap
-	- [ ] Aggiornare le risorse rimuovendo i CDN (css/style.css e javascript)
-- [ ] Lanciare il progetto `npm run dev`
+- [ ] Installare gulp globalmente sulla propria macchina `npm install gulp-cli -g`
+- [ ] Copiare il file `index.html` dal progetto `00-bootstrap`
+	- [ ] Aggiornare le risorse rimuovendo i CDN in favore dei file in locale (css/style.css e javascript)
+- [ ] Lanciare il progetto `npm run dev` oppure `gulp`
+  - [ ] Node.js farà partire l'utility Gulp che si occuperà di compilare il file `style.css` ad ogni modifica effettuata ad un file `.scss`
+  - [ ] Per interrompere il processo sul terminale digitare `ctrl + c`
 - [ ] Modificare il file `scss/_variables.scss` per personalizzare il progetto sovascrivendo le variabili di default di bootstrap definite in `node_modules/boostrap/scss/_variables.scss`
   - [ ] Cambiare font-family
   - [ ] Modificare i colori
