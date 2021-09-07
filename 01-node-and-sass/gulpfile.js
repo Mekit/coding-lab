@@ -6,31 +6,34 @@
 
 // Initialize modules
 // Importing specific gulp API functions lets us write them below as series() instead of gulp.series()
-const { src, dest, watch, series, parallel } = require('gulp');
-const fancylog = require( 'fancy-log' );
+const { src, dest, watch, series } = require('gulp');
 
 var gulp = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
 
 const autoprefixer = require('gulp-autoprefixer');
+
+// https://github.com/adriancooney/node-sfx
 const sfx = require("sfx");
 const browserSync = require("browser-sync").create();
 
 // In windows, the sfx utility is not working
 // turn of this settings to use this project
-const soundEffects = true; 
+const soundEffects = false; 
 
 // File paths
 const files = { 
+  html: '*.html',
   sass: './scss/**/*.scss',
   sassPath: './scss/style.scss',
   cssPath: './css/style.css',
 }
 
-// https://github.com/adriancooney/node-sfx
-function sound(end){
+/* Sound task */
+function soundTask(end){
   if (!soundEffects){
     end();
+    return;
   }
   // sounds: hero, ping, random
   sfx.play('ping', 5, function() {
@@ -42,7 +45,7 @@ function sound(end){
 }
 
 /* Task to compile sass*/
-function compileSass(){
+function scssTask(){
   return src(files.sassPath)
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 10 versions', 'ie 9'))
@@ -51,7 +54,22 @@ function compileSass(){
 }
 
 /* Watch Task */
-function watchSass(){
+function watchTask(){
+  watch(files.html, series(
+    browsersyncReload,
+    soundTask
+  ));
+  watch(files.sass,
+    series(
+      scssTask,
+      browsersyncReload,
+      soundTask
+    )
+  );
+}
+
+/* Task to init browser sync */
+function browsersyncServe(cb){
   browserSync.init({
     // You can tell browserSync to use this directory and serve it as a mini-server
     server: {
@@ -61,27 +79,21 @@ function watchSass(){
     // You can use the proxy setting to proxy that instead
     // proxy: "yourlocal.dev"
   });
-
-  watch(files.sass, {interval: 1000, usePolling: true}, // Makes docker work
-    series(
-      compileSass,
-      reload,
-      sound,
-    )
-  );    
+  cb();
 }
 
-// A simple task to reload the page
-function reload(done) {
+/* A simple task to reload the page */
+function browsersyncReload(cb) {
   browserSync.reload();
-  done();
+  cb();
 }
 
 // Export the default Gulp task so it can be run
 // Runs the scss and js tasks simultaneously
 // then runs cacheBust, then watch task
 exports.default = series(
-  compileSass,
-  sound,
-  watchSass,
+  scssTask,
+  browsersyncServe,
+  soundTask,
+  watchTask,
 );

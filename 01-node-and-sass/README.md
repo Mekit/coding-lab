@@ -28,4 +28,5 @@ L'obbiettivo del *laboratorio 01* è quello di utilizzare [Node.js](https://node
   - [ ] ...
 
 ## Risorse e tutorial
+- [Browsersync + Sass + Gulp in 15 minutes](https://www.youtube.com/watch?v=q0E1hbcj-NI)
 
