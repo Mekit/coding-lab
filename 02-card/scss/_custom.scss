@@ -1,0 +1,89 @@
+/* Custom Styling */
+
+body{
+  background: $gray-100;
+}
+
+.container-main{
+  margin-top: $spacer * 4;
+}
+
+// ** CARD **
+// ----------
+
+$card-transition-duration: .5s;
+
+.a-card{
+  display: block;
+  max-width: 400px;
+
+  span{
+    display: block;
+  }
+
+  &:hover{
+    .card--shadow{
+      box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    }
+  
+    .card{
+      .cta{
+        right: 12px;
+      }
+  
+      img{
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+.card{
+  border: 1px solid $gray-200;
+  position: relative;
+  border-radius: 30px;
+  background: #fff;
+
+  &--shadow{
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow ease-in-out $card-transition-duration;
+  }
+  
+  &__img{
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+  }
+
+  &__content{
+    padding: $spacer * 2;
+    padding-bottom: $spacer * 4;
+  }
+
+  &__title{
+    margin-bottom: $spacer * 1;
+  }
+
+  img{
+    transition: transform ease-in-out $card-transition-duration;
+  }
+
+  .cta{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: $primary;
+    border-radius: 100%;
+    transition: right ease-in-out $card-transition-duration;
+
+    i{
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      color: #fff;
+    }
+  }
+}
