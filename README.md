@@ -24,9 +24,10 @@ Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più
 ## Laboratori
 - [ ] [Laboratorio 00](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
 - [ ] [Laboratorio 01](https://github.com/Mekit/coding-lab/tree/main/01-node-and-sass) - Node.js, Sass and Gulp
+- [ ] [Laboratorio 02](https://github.com/Mekit/coding-lab/tree/main/02-card) - Theming a card
 
 ## Tutor
-I tutor di Coding Lab sono sviluppatori e designer che hanno compotenze trasversali tra i due mondi.
+I tutor di Coding Lab sono sviluppatori e designer che hanno competenze trasversali tra i due mondi.
 - [Luca Cattaneo](https://www.linkedin.com/in/luca-cattaneo-dev/)
 - [Alice Ninni](https://www.linkedin.com/in/alice-ninni/)
 
@@ -37,7 +38,3 @@ To do
 
 ### Vuoi diventare un tutor?
 To do
-
-
-
-
