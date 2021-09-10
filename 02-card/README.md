@@ -3,7 +3,7 @@
 
 ## Obiettivi
 
-L'obbiettivo del *laboratorio 02* è quello di provare a sfruttare le potenzialità di Sass per temizzare una card con un layout custom.
+L'obbiettivo del *laboratorio 02* è quello di provare a sfruttare le potenzialità di Sass per temizzare una card con un layout custom.\
 Verrà introdotta anche la nomenclatura [BEM](https://en.bem.info/methodology/) *Block Element, Modifiers* con cui è stato scritto il markup html della card.
 
 ## Todo
@@ -30,7 +30,7 @@ Verrà introdotta anche la nomenclatura [BEM](https://en.bem.info/methodology/) 
 
 ## Bem
 
-L'utilizzo della nomenclatura *BEM* apparentemente non ha nessuna ripercussione a livello di codice;
+L'utilizzo della nomenclatura *BEM* apparentemente non ha nessuna ripercussione a livello di codice.\
 In realtà porta con se grandi vantaggi:
 - Rende trasparente e chiara la definizione di un componente;
 - Obbliga il coder a scrivere un markup nella maniera corretta interrogandosi sulle relazioni tra componenti, sotto componenti e modificatori;
@@ -42,6 +42,7 @@ In realtà porta con se grandi vantaggi:
 a .card .cta i{
   color: ###;
 }
+
 /* selettore con 1 livello di nidificazione */
 .card__cta i{
   color: ###;
