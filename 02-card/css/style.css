@@ -2223,10 +2223,10 @@ body {
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
-.a-card:hover .card .cta {
+.a-card:hover .card__cta {
   right: 12px;
 }
-.a-card:hover .card img {
+.a-card:hover img {
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
@@ -2260,14 +2260,7 @@ body {
 .card__title {
   margin-bottom: 1rem;
 }
-.card img {
-  -webkit-transition: -webkit-transform ease-in-out 0.5s;
-  transition: -webkit-transform ease-in-out 0.5s;
-  -o-transition: transform ease-in-out 0.5s;
-  transition: transform ease-in-out 0.5s;
-  transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
-}
-.card .cta {
+.card__cta {
   position: absolute;
   bottom: 10px;
   right: 20px;
@@ -2279,9 +2272,16 @@ body {
   -o-transition: right ease-in-out 0.5s;
   transition: right ease-in-out 0.5s;
 }
-.card .cta i {
+.card__cta i {
   position: absolute;
   top: 12px;
   left: 12px;
   color: #fff;
+}
+.card img {
+  -webkit-transition: -webkit-transform ease-in-out 0.5s;
+  transition: -webkit-transform ease-in-out 0.5s;
+  -o-transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
 }
