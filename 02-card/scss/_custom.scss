@@ -12,10 +12,13 @@ body{
 // ----------
 
 $card-transition-duration: .5s;
+$card-border-radius: 30px;
 
 .a-card{
   display: block;
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 
   span{
     display: block;
@@ -41,7 +44,7 @@ $card-transition-duration: .5s;
 .card{
   border: 1px solid $gray-200;
   position: relative;
-  border-radius: 30px;
+  border-radius: $card-border-radius;
   background: #fff;
 
   &--shadow{
@@ -51,8 +54,8 @@ $card-transition-duration: .5s;
   
   &__img{
     position: relative;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: $card-border-radius;
+    border-top-right-radius: $card-border-radius;
     overflow: hidden;
   }
 
