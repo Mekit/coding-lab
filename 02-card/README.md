@@ -8,23 +8,23 @@ Verrà introdotta anche la nomenclatura [BEM](https://en.bem.info/methodology/) 
 
 ## Todo
 
-- [ ] Clonare la repository
-- [ ] Installare le dipendenze del progetto `npm i` e lanciare il progetto `gulp`
-- [ ] Analizzare il risultato da ottenere nel browser (layout e animazioni all'hover)
-- [ ] Analizzare la struttura del progetto e performance di compilazione
-  - Notare il file `style.scss` in cui solo una parte di bootstrap viene inclusa nel progetto
-  - Questo permette tempi di compilazione decisamente ridotti
+- [ ] Clonare la repositoryin locale;
+- [ ] Installare le dipendenze del progetto `npm i` e lanciare il progetto `gulp`;
+- [ ] Analizzare il risultato da ottenere nel browser (layout e animazioni all'hover);
+- [ ] Analizzare la struttura del progetto e performance di compilazione;
+  - Notare il file `style.scss` in cui solo una parte di bootstrap viene inclusa nel progetto;
+  - Questo permette tempi di compilazione decisamente ridotti;
   - Il file `style.css` compilato contiene circa 2.000 righe invece che 12.000 dei precedenti progetti 🚀
-- [ ] Analizzare il file `_variables.scss` dove alcune variabili sono state personalizzate
+- [ ] Analizzare il file `_variables.scss` dove alcune variabili sono state personalizzate;
   - Le variabili relative ai grigi sono state riportate tutte per poter essere utilizzate anche nel file `_variables.scss`;
-  - Solo una variabile (`$gray-900`) viene utilizzata nel progetto ma può essere una buona norma riportare l'intero blocco di variabili nel caso si voglia in futuro personalizzare tutti i grigi del progetto.
+  - Solo una variabile (`$gray-900`) viene utilizzata nel progetto ma può essere una buona norma riportare l'intero blocco di variabili nel caso si voglia in futuro personalizzare tutti i grigi del progetto;
   - La variabile `$link-color` è stata impostata su `$body-color` (il colore del testo standard): bootstrap di base imposta tutti i link con un colore; questa regola risulta spesso essere troppo aggressiva: se tutti i link all'interno del progetto sono colorati, spesso ci sarà la necessità si sovrascrivere questa regola (es. quando si creare un componente card in cui tutto il contenuto è incluso in un link) 🤓
   - La variabile `$link-decoration` è stata impostata su `none` per lo stesso motivo;
-- [ ] Analizzare il markup della card presente nel file `index.html`
-  - Il markup è stato scritto utilizzando la nomenclatura *bem*
+- [ ] Analizzare il markup della card presente nel file `index.html`;
+  - Il markup è stato scritto utilizzando la nomenclatura *BEM*;
   - Notare l'utilizzo del doppio underscore `__` per descrivere un sotto componente della `card`: `card__img`, `card__content`, `card__cta`;
   - Notare l'utilizzo del doppio trattino `--` per descrivere un modificatore della card `card--shodow`;
-- [ ] Cancellare all'interno del file `_custom.scss` da riga 13 e provare a riscrivere il componente;
+- [ ] Cancellare all'interno del file `_custom.scss` da riga 13 e provare a riscrivere il componente scss;
   - Sarà sempre possibile sbirciare nella [ripository](https://github.com/Mekit/coding-lab/blob/main/02-card/scss/_custom.scss) per capire come era stato scritto in origine 👀
 
 ## BEM
@@ -36,10 +36,11 @@ In realtà porta con se grandi vantaggi:
 - Inoltre riduce la complessità del css generato evitando complessità e eccessive nidificazione; evita per esempio la generazione di selettori molto lunghi:
 
 ```css
+/* selettore con 3 livelli di nidificazione */
 a .card .cta i{
   color: ###;
 }
-
+/* selettore con 1 livello di nidificazione */
 .card__cta i{
   color: ###;
 }
