@@ -38,6 +38,7 @@ Possiamo immaginare lo spazio web a nostra disposizione sul server come una cart
    - Impostare il protocollo su `ftp`
    - Impostare la porta su `21`
    - Impostare i parametri di accesso `host`, `username`, `password`
+   - Impostare il parametro `uploadOnSave` su `false` per ora
 
 ```json
 {
@@ -48,20 +49,24 @@ Possiamo immaginare lo spazio web a nostra disposizione sul server come una cart
     "username": "",
     "password": "",
     "remotePath": "",
-    "uploadOnSave": true,
+    "uploadOnSave": false,
     "ignore": [
         "node_modules",
         ".vscode",
         ".git",
         ".DS_Store",
         ".gitignore",
-        "README.md"
+        "README.md",
+        "gulpfile.js",
+        "package.json",
+        "package-lock.json"
     ]
 }
 ```
-
-3. Pubblicare i file
-4. Testare il sito web online
+3. Utilizzare la tab *SFTP: explorer* per navigare i file sul server
+4. Rimuovere il file `index.html` presente di default sul server
+5. Uplodare 
+5. Testare il sito web online
 
 
 ## Risorse e tutorial
