@@ -31,9 +31,40 @@ Possiamo immaginare lo spazio web a nostra disposizione sul server come una cart
 
 ## Todo
 
-1. 
+1. Installare l'estensione SFTP di liximomo
+2. Fare il setup per connettere il nostro progetto al server
+   - `Ctrl+Shift+P` su Windows/Linux oppure `Cmd+Shift+P` su Mac per aprire la palette dei comandi e lanciare `SFTP: config`
+   - Dare un nome al server impostando il parametro `name`
+   - Impostare il protocollo su `ftp`
+   - Impostare la porta su `21`
+   - Impostare i parametri di accesso `host`, `username`, `password`
+
+```json
+{
+    "name": "Coding Lab Server",
+    "host": "",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "",
+    "password": "",
+    "remotePath": "",
+    "uploadOnSave": true,
+    "ignore": [
+        "node_modules",
+        ".vscode",
+        ".git",
+        ".DS_Store",
+        ".gitignore",
+        "README.md"
+    ]
+}
+```
+
+3. Pubblicare i file
+4. Testare il sito web online
 
 
 ## Risorse e tutorial
 - [VHosting - Hosting Low Cost](https://www.vhosting-it.com/hosting-low-cost/) esempio di pacchetti low cost che Mekit acquista per siti tradizionali (non troppo complessi)
+- [SFTP - liximomo](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp)
 
