@@ -14,12 +14,14 @@ var sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 
 // https://github.com/adriancooney/node-sfx
-const sfx = require("sfx");
 const browserSync = require("browser-sync").create();
 
 // In windows, the sfx utility is not working
 // turn of this settings to use this project
-const soundEffects = false; 
+const soundEffects = false;
+if (soundEffects){
+  const sfx = require("sfx");
+}
 
 // File paths
 const files = { 
