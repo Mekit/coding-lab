@@ -25,6 +25,7 @@ Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più
 - [ ] [Laboratorio 00](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
 - [ ] [Laboratorio 01](https://github.com/Mekit/coding-lab/tree/main/01-node-and-sass) - Node.js, Sass and Gulp
 - [ ] [Laboratorio 02](https://github.com/Mekit/coding-lab/tree/main/02-card) - Theming a card
+- [ ] [Laboratorio 03](https://github.com/Mekit/coding-lab/tree/main/03-ftp) - Ftp - Locale vs remoto
 
 ## Tutor
 I tutor di Coding Lab sono sviluppatori e designer che hanno competenze trasversali tra i due mondi.

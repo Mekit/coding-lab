@@ -29,8 +29,17 @@ La maggior parte dei provider offrono pacchetti di hosting comprendono questi se
 In questo laboratorio ci occuperemo solo di un servizio per: lo spazio web. \
 Possiamo immaginare lo spazio web a nostra disposizione sul server come una cartella all'interno del quale possiamo inserire file html, css, immagini, .. e che è accessibile tramite internet da qualsiasi dispositivo munito di connessione.
 
-## Todo
+## Todo A - Utilizzare Filezilla
+1. Installare [FileZilla](https://filezilla-project.org/)
+2. Fare il setup di un sito salvandolo nel <em>site manager</em>
+   - Dare un nome alla connessione (di solito uguale al nome del dominio: lab.dev.mekit.it)
+   - Inserire l'host (può essere un dominio o un indirizzo IP)
+   - Inserire il nome utente e la password
+3. Connettersi al server che si aprirà nella parte destra della schermata
+4. Provare a pubblicare alcuni file sullo spazio web
+   - N.B: non tutti i file che utilizziamo per sviluppare servono al sito in produzione (es. la cartella `node_modules` ci è utile al momento solo in fase di sviluppo)
 
+## Todo B - Utilizzare l'FTP all'interno di VSCode
 1. Installare l'estensione SFTP di liximomo
 2. Fare il setup per connettere il nostro progetto al server
    - `Ctrl+Shift+P` su Windows/Linux oppure `Cmd+Shift+P` su Mac per aprire la palette dei comandi e lanciare `SFTP: config`
@@ -64,10 +73,7 @@ Possiamo immaginare lo spazio web a nostra disposizione sul server come una cart
 }
 ```
 3. Utilizzare la tab *SFTP: explorer* per navigare i file sul server
-4. Rimuovere il file `index.html` presente di default sul server
-5. Uplodare 
-5. Testare il sito web online
-
+4. Provare a caricare qualche file sul server e a sperimentare con il parametro `uploadOnSave: true`
 
 ## Risorse e tutorial
 - [VHosting - Hosting Low Cost](https://www.vhosting-it.com/hosting-low-cost/) esempio di pacchetti low cost che Mekit acquista per siti tradizionali (non troppo complessi)
