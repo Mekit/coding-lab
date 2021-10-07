@@ -1,0 +1,93 @@
+/* Custom Styling */
+
+body{
+  background: $gray-200;
+}
+
+.container-main{
+  margin-top: $spacer * 4;
+  margin-bottom: $spacer * 8;
+}
+
+// ** MEDIA QUERY EXAMPLES **
+// --------------------------
+
+.box{
+  min-height: 100px;
+  background: $gray-500;
+  margin-top: $spacer * 2;
+}
+
+// Esempio di media query funzionante in CSS
+@media only screen and (min-width: 500px){
+  .box{
+    background: $teal-200;
+  }
+}
+
+// Esempio di media query in SASS
+$screen-md-min: 500px;
+
+.alert{
+  margin: ($spacer * 2) 0;
+  padding: ($spacer * 0.5) ($spacer * 1);
+  border: 1px solid $purple-300;
+  background: rgba($purple, 20%);
+  color: $purple;
+
+  // In SASS la media query può essere scritta dentro il selettore
+  // Esempio n.1 utilizzando variabile nella media query (es. bootstrap 3)
+  @media only screen and (min-width: $screen-md-min){
+    padding: ($spacer * 1) ($spacer * 1.5);
+    font-size: $font-size-lg;
+  }
+
+  // Accedere alla variabili di bootstrap 5
+  // @media only screen and (min-width: map-get($grid-breakpoints, "sm")){ 
+
+  // Esempio n.2 utilizzando variabile nella media query
+  @media only screen and (min-width: $screen-md-min){
+    padding: ($spacer * 1) ($spacer * 1.5);
+    font-size: $font-size-lg;
+  } 
+}
+
+// Esempio di media query usando i mixins di bootstrap 5
+
+.fancy-title{
+  margin-top: $spacer * 4;
+  margin-bottom: $spacer * 4;
+  position: relative;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 120px;  
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: $h1-font-size * 2;  
+  }
+
+  &:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: $purple;
+    
+    @include media-breakpoint-down(sm) {
+      margin-top: $spacer * 1;
+    }
+
+    @include media-breakpoint-up(sm) {
+      position: absolute;
+      width: 100px;
+      bottom: 19%;
+      left: 0;  
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 10px;
+    }
+  }
+}
+
