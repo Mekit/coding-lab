@@ -2,6 +2,7 @@
 
 body{
   background: $gray-200;
+  position: relative;
 }
 
 .app-container{
@@ -49,10 +50,10 @@ body{
   }
 
   &--done{
-    border-left: 10px solid $primary;
+    border-left: 10px solid $teal;
 
     .i-done{
-      color: $primary;
+      color: $teal;
       display: block
     }
   }

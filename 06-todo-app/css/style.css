@@ -3660,6 +3660,7 @@ textarea.form-control-lg {
 /* Custom Styling */
 body {
   background: #e9ecef;
+  position: relative;
 }
 
 .app-container {
@@ -3709,10 +3710,10 @@ body {
   font-size: 30px;
 }
 .todo-item--done {
-  border-left: 10px solid #0d6efd;
+  border-left: 10px solid #20c997;
 }
 .todo-item--done .i-done {
-  color: #0d6efd;
+  color: #20c997;
   display: block;
 }
 .todo-item--open .i-open {

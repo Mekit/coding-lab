@@ -9,19 +9,17 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  
   <div id="app">
     <div class="header">
       <div class="app-container">
         <h1>A simple Todo App with Vue.js</h1>
-        
       </div>
     </div>
     <div class="app-container">
       <form class="new-todo-form" v-on:submit.prevent="addNewTodo">
         <div class="input-group">
           <input type="text" class="form-control form-control-lg" placeholder="Write your to do" aria-label="Write your to do" aria-describedby="todo-add" v-model="todo">
-          <button class="btn btn-outline-primary btn-lg" type="submit" id="todo-add">Add</button>
+          <button class="btn btn-primary btn-lg" type="submit" id="todo-add">Add</button>
         </div>
       </form>
       <div class="todos">
