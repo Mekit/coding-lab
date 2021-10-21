@@ -28,6 +28,7 @@ Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più
 - [ ] [Laboratorio 03](https://github.com/Mekit/coding-lab/tree/main/03-ftp) - Ftp - Locale vs remoto
 - [ ] [Laboratorio 04](https://github.com/Mekit/coding-lab/tree/main/04-grid) - CSS grid
 - [ ] [Laboratorio 05](https://github.com/Mekit/coding-lab/tree/main/05-media-queries) - Media Queries
+- [ ] [Laboratorio 06](https://github.com/Mekit/coding-lab/tree/main/06-todo-app) - Vue.js Todo App
 
 ## Tutor
 I tutor di Coding Lab sono sviluppatori e designer che hanno competenze trasversali tra i due mondi.
