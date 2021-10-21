@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App with Vue.js</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div id="app">
+    <div class="header">
+      <div class="app-container">
+        <h1>A simple Todo App with Vue.js</h1>
+        
+      </div>
+    </div>
+    <div class="app-container">
+      <form class="new-todo-form" v-on:submit.prevent="addNewTodo">
+        <div class="input-group">
+          <input type="text" class="form-control form-control-lg" placeholder="Write your to do" aria-label="Write your to do" aria-describedby="todo-add" v-model="todo">
+          <button class="btn btn-outline-primary btn-lg" type="submit" id="todo-add">Add</button>
+        </div>
+      </form>
+      <div class="todos">
+        <div v-for="item, index in todos" class="todo-item" :class="item.done ? 'todo-item--done' : 'todo-item--open'" v-on:click="toggleDone(index)">
+          {{item.text}}
+          <span class="todo-item__check">
+            <i class="material-icons i-done">&#xe86c;</i>
+            <i class="material-icons i-open">&#xe836;</i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
