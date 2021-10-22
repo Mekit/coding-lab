@@ -44,22 +44,50 @@ body{
     height: 30px;
   }
 
+  &__new{
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    color: $danger;
+    display: none;
+  }
+
+  &__note{
+    display: none;
+    font-size: $font-size-sm;
+    margin-top: $spacer * 0.25;
+    color: $gray-600;
+  }
+
   i{
     display: none;
     font-size: 30px;
   }
 
-  &--done{
-    border-left: 10px solid $teal;
-
-    .i-done{
-      color: $teal;
-      display: block
-    }
-  }
   &--open{
     .i-open{
-      display: block
+      display: block;
+    }
+  }
+  &--note{
+    .todo-item__note{
+      display: block;
+    }
+  }
+  &--new{
+    border-left: 10px solid $danger;
+    .todo-item__new{
+      display: inline;
+    }
+  }
+  &--done{
+    border-left: 10px solid $teal;
+    .i-done{
+      color: $teal;
+      display: block;
+    }
+    .todo-item__new{
+      color: $teal;
     }
   }
 }

@@ -18,13 +18,12 @@ const browserSync = require("browser-sync").create();
 
 // In windows, the sfx utility is not working
 // turn of this settings to use this project
-const soundEffects = false;
-if (soundEffects){
-  const sfx = require("sfx");
-}
+const soundEffects = true;
+const sfx = require("sfx");
 
 // File paths
 const files = { 
+  javascript: "./js/*.js",
   html: '*.html',
   sass: './scss/**/*.scss',
   sassPath: './scss/style.scss',
@@ -57,6 +56,10 @@ function scssTask(){
 
 /* Watch Task */
 function watchTask(){
+  watch(files.javascript, series(
+    browsersyncReload,
+    soundTask
+  ));
   watch(files.html, series(
     browsersyncReload,
     soundTask

@@ -10,6 +10,7 @@
 </head>
 <body>
   <div id="app">
+
     <div class="header">
       <div class="app-container">
         <h1>A simple Todo App with Vue.js</h1>
@@ -19,22 +20,31 @@
       <form class="new-todo-form" v-on:submit.prevent="addNewTodo">
         <div class="input-group">
           <input type="text" class="form-control form-control-lg" placeholder="Write your to do" aria-label="Write your to do" aria-describedby="todo-add" v-model="todo">
-          <button class="btn btn-primary btn-lg" type="submit" id="todo-add">Add</button>
+          <button class="btn btn-primary btn-lg" :class="(todo == '') ? 'disabled' : ''" type="submit" id="todo-add">Add</button>
         </div>
       </form>
+
       <div class="todos">
-        <div v-for="item, index in todos" class="todo-item" :class="item.done ? 'todo-item--done' : 'todo-item--open'" v-on:click="toggleDone(index)">
-          {{item.text}}
+
+        <div v-for="item, index in todos" class="todo-item" :class="todoClass(item)" v-on:click="toggleDone(index)">
+          
+          <span class="todo-item__new">New</span>
+          
+          <span class="todo-item__text">{{item.text}}</span>
+
+          <span class="todo-item__note">{{item.note}}</span>
+
           <span class="todo-item__check">
             <i class="material-icons i-done">&#xe86c;</i>
             <i class="material-icons i-open">&#xe836;</i>
           </span>
         </div>
+
       </div>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="/js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
