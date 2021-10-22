@@ -6,7 +6,7 @@ var app = new Vue({
       {
         text: 'Learn CSS',
         done: true,
-        note: 'Era un gioco da ragazzi'
+        note: 'Not a big deal 😎'
       },
       {
         text: 'Thematize this App',
@@ -16,7 +16,7 @@ var app = new Vue({
       {
         text: 'Learn JavaScript',
         done: false,
-        note: 'Ci vorrà del tempo ;)'
+        note: 'Not so easy 😅'
       },
       { 
         text: 'Learn Vue.js',

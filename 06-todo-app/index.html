@@ -27,13 +27,9 @@
       <div class="todos">
 
         <div v-for="item, index in todos" class="todo-item" :class="todoClass(item)" v-on:click="toggleDone(index)">
-          
           <span class="todo-item__new">New</span>
-          
           <span class="todo-item__text">{{item.text}}</span>
-
           <span class="todo-item__note">{{item.note}}</span>
-
           <span class="todo-item__check">
             <i class="material-icons i-done">&#xe86c;</i>
             <i class="material-icons i-open">&#xe836;</i>

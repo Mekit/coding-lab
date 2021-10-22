@@ -19,7 +19,11 @@ const browserSync = require("browser-sync").create();
 // In windows, the sfx utility is not working
 // turn of this settings to use this project
 const soundEffects = true;
-const sfx = require("sfx");
+let sfx = false;
+if (soundEffects) {
+  sfx = require("sfx");
+}
+
 
 // File paths
 const files = { 
