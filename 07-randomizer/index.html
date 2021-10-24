@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randomizer</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div class="wrapper-teams">
+      <div class="teams">
+        <div class="team" :class="teamClass(team)" v-for="team, t in teams">
+          <div class="team__img" v-on:click="itemClick(t)">
+            <img :src="team.img" class="img-fluid"/>
+          </div>
+          <div class="team__actions" v-on:click="toggleClick(team)">
+            <span class="team__name">{{team.name}}</span>
+            <span class="team__toggle">
+              <i class="material-icons i-on">&#xe9f6;</i>
+              <i class="material-icons i-off">&#xe9f5;</i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-actions">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button class="btn btn-primary" v-on:click="randomize()">Randomize!</button>
+        <button class="btn btn-secondary" v-on:click="reset()">Reset</button>
+      </div>
+    </div>
+
+    <div class="fs-team" v-if="currentTeam">
+      <img :src="currentTeam.img"/>
+      <div class="fs-team__close" v-on:click="closeFs()">
+        <i class="material-icons">&#xe5cd;</i>   
+      </div>
+    </div><!-- fullscreen -->
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

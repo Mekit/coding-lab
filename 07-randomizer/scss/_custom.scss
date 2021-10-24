@@ -1,0 +1,158 @@
+/* Custom Styling */
+
+body{
+  background: $gray-900;
+  position: relative;
+}
+
+// ** ACTIONS **
+// -------------
+
+.app-actions{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+// ** TEAMS **
+// -----------
+
+.wrapper-teams{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.teams{
+  padding: $spacer * 0.5;
+  display: grid;
+  grid-gap: $spacer * 0.5;
+  @include media-breakpoint-up(sm){
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-breakpoint-up(md){
+    padding: $spacer * 1.5;
+    grid-gap: $spacer * 1.5;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-breakpoint-up(lg){
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.team{
+  position: relative;
+  padding: 2px;
+
+  &__img{
+    opacity: 1;
+    transition: opacity ease-in-out .2s;
+  }
+
+  &__name{
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    color: #fff;
+    line-height: 34px;
+    padding-left: 15px;
+  }
+
+  &__actions{
+    background: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 35px;
+    cursor: pointer;
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+  }
+
+  &__toggle{
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+  }
+
+  i{
+    display: none;
+  }
+
+  .i-on{
+    color: $primary;
+  }
+
+  .i-off{
+    color: #fff;
+  }
+
+  &--on{
+    border: 1px solid rgba(#fff, 80%);
+    cursor: pointer;
+    .i-on{
+      display: block;
+    }
+  }
+
+  &--off{
+    border: 1px solid rgba(#fff, 30%);
+
+    .team__img{
+      opacity: 0.1;
+    }
+
+    .i-off{
+      display: block;
+    }
+  }
+
+  // &:hover{
+  //   .team__img{
+  //     opacity: 1;
+  //   }
+  // }
+}
+
+// ** FULLSCREEN **
+// ----------------
+
+.fs-team{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000, 80%);
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: rgba(#000, 50%);
+    color: #fff;
+
+    i{
+      font-size: 1.5rem;
+      position: absolute;
+      top: 13px;
+      left: 13px;
+    }
+  }
+}
+
+

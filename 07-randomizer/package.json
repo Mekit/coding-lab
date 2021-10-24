@@ -1,0 +1,22 @@
+{
+  "name": "01-node-and-sass",
+  "version": "1.0.0",
+  "description": "Laboratorio 01",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "Luca Cattaneo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.38.2",
+    "sfx": "^0.1.1"
+  }
+}
