@@ -34,9 +34,9 @@
       </div>
     </div>
 
-    <div class="fs-team" v-if="currentTeam">
+    <div class="fs-team" v-if="currentTeam" v-on:click="closeFs()">
       <img :src="currentTeam.img"/>
-      <div class="fs-team__close" v-on:click="closeFs()">
+      <div class="fs-team__close">
         <i class="material-icons">&#xe5cd;</i>   
       </div>
     </div><!-- fullscreen -->
