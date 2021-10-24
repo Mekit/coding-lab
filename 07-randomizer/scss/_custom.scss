@@ -5,15 +5,58 @@ body{
   position: relative;
 }
 
+// ** MIXIN **
+// -----------
+
+@mixin ani($name, $timing-function, $duration, $delay){
+	@media only screen{
+		animation-fill-mode: both;
+		animation-name: $name;
+		animation-duration: $duration;
+		animation-timing-function: $timing-function;
+		animation-delay: $delay;	
+	}
+}
+
+@keyframes fadeIn{
+	from{
+    opacity: 0;
+	}
+	to{
+    opacity: 1;
+	}
+}
+
+@keyframes slideTop{
+	from{
+    transform: translateY(-10%);
+    opacity: 0;
+	}
+	to{
+    transform: translateY(0%);
+    opacity: 1;
+	}
+}
+
+
 // ** ACTIONS **
 // -------------
 
 .app-actions{
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(#000, 30%);
+
+  @include media-breakpoint-down(sm){
+    top: auto;
+    bottom: 10px;
+  }
+
+  @include ani('fadeIn', 'ease-in-out', 1s, 0);
 }
 
 // ** TEAMS **
@@ -30,6 +73,8 @@ body{
   padding: $spacer * 0.5;
   display: grid;
   grid-gap: $spacer * 0.5;
+
+  grid-template-columns: repeat(2, 1fr);
   @include media-breakpoint-up(sm){
     grid-template-columns: repeat(3, 1fr);
   }
@@ -41,6 +86,7 @@ body{
   @include media-breakpoint-up(lg){
     grid-template-columns: repeat(6, 1fr);
   }
+  @include ani('slideTop', 'ease-in-out', 1s, 2s);
 }
 
 .team{
@@ -127,7 +173,7 @@ body{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(#000, 80%);
+  background: rgba(#000, 85%);
 
   img{
     width: 100%;
@@ -153,6 +199,7 @@ body{
       left: 13px;
     }
   }
+  @include ani('fadeIn', 'ease-in-out', 0.5s, 0);
 }
 
 
