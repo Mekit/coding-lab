@@ -18,8 +18,7 @@ Diventare un developer è un percorso ambizioso ma anche sfidate e divertente; l
 
 Non si inizierà con lunghe lezioni di html e css, si cercherà più possibile di utilizzare tecnologie all'avanguardia in modo da realizzare fin da subito e in tempi rapidi qualcosa di concreto.
 
-Si tratteranno principalmente argomenti legati al front-end, di connessione tra il mondo del design e quello dello sviluppo.
-Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più complessi (back-end, cms, framework javascript, ...).
+Si tratteranno argomenti legati al front-end, di connessione tra il mondo del design e quello dello sviluppo, ma anche generative art e creative coding. 
 
 ## Laboratori
 - [ ] [Laboratorio 00](https://github.com/Mekit/coding-lab/tree/main/00-bootstrap) - Bootstrap
@@ -33,9 +32,11 @@ Alla fine del percorso, per chi lo vorrà, si potranno affrontare argomenti più
 ## Tutor
 I tutor di Coding Lab sono sviluppatori e designer che hanno competenze trasversali tra i due mondi.
 - [Luca Cattaneo](https://www.linkedin.com/in/luca-cattaneo-dev/)
+- [Davide Cudia](https://www.linkedin.com/in/davidecudia/)
 - [Alice Ninni](https://www.linkedin.com/in/alice-ninni/)
 
 ## Come partecipare?
+To do
 
 ### Vuoi partecipare ai laboratori?
 To do
